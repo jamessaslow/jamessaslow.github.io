@@ -1,0 +1,57 @@
+/* set the background color and font family for the page */
+body {
+	background-color: #f0f5f5;
+	background: linear-gradient(135deg, #b3d3e4, #d3b3e4);
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* set the color, size, and position of the navigation links */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #003366;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: #f0f5f5;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #4d4d4d;
+}
+
+/* style the main intro section with the name and picture */
+.intro {
+	background-color: #f0f5f5;
+	background: radial-gradient(ellipse at center, #f0f5f5 0%, #b3d3e4 100%);
+	box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro h1 {
+	color: #003366;
+	font-size: 4em;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.intro img {
+	width: 150px;
+	height: 150px;
+	margin-left: 20px;
+	box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+}
