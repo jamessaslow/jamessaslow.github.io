@@ -3,7 +3,7 @@ let textIndex = 0;
 let charIndex = 0;
 const typingDelay = 100;
 const erasingDelay = 50;
-const newTextDelay = 2000;
+const newTextDelay = 20000;
 const detel = document.querySelector(".detel");
 const textElement = document.querySelector(".detel h2");
 
