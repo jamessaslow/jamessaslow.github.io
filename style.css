@@ -85,3 +85,42 @@ span{
 /*	transform: translateX(-50%);
 	translate: bottom 1s, left 1s;*/
 }
+
+
+
+
+
+
+.detel h2 {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.15em;
+}
+
+.detel h2 span {
+  color: orange;
+  display: inline-block;
+  animation: typing 3.5s steps(40, end),
+             blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
