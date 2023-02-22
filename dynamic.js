@@ -1,11 +1,15 @@
-const textArray = ["I'm a Physicist", "I'm a Programmer", "I'm a Data Scientist"];
+const textArray = ["I'm a Physicist", "I'm a Programmer", "I'm a Data Scientist", "I'm a Data Analyst","I'm a Researcher", "I'm a Technical Writer"];
 let textIndex = 0;
 let charIndex = 0;
 const typingDelay = 100;
 const erasingDelay = 50;
-const newTextDelay = 5000;
+const newTextDelay = 3000;
 const detel = document.querySelector(".detel");
 const textElement = document.querySelector(".detel h2");
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
 function type() {
   if (charIndex < textArray[textIndex].length) {
@@ -23,10 +27,7 @@ function erase() {
     charIndex--;
     setTimeout(erase, erasingDelay);
   } else {
-    textIndex++;
-    if (textIndex >= textArray.length) {
-      textIndex = 0;
-    }
+    textIndex = getRandomInt(textArray.length);
     setTimeout(type, typingDelay + 1100);
   }
 }
