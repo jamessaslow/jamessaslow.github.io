@@ -72,22 +72,19 @@ span{
 .images{
 	width: 45%;
 	height: 80%;
-	postition: absolute;
+	position: absolute;
 	bottom: 0;
 	right: 100px;
 }
 
 .images img{
-	height: 74%;
+	height: 100%;
 	position: absolute;
-	left: 50%;
+	left: 4%;
 	bottom: 0;
 /*	transform: translateX(-50%);
 	translate: bottom 1s, left 1s;*/
 }
-
-
-
 
 
 
