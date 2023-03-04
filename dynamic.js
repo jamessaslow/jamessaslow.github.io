@@ -1,4 +1,4 @@
-const textArray = ["I'm a Physicist", "I'm a Programmer", "I'm a Data Scientist", "I'm a Data Analyst","I'm a Researcher", "I'm a Technical Writer"];
+const textArray = ["I'm a Physicist", "I'm a Programmer", "I'm a Data Scientist", "I'm a Data Analyst","I'm a Researcher", "I'm a Technical Writer", "I'm a Tutor"];
 let textIndex = 0;
 let charIndex = 0;
 const typingDelay = 100;
