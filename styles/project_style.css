@@ -10,8 +10,10 @@
 .section{
   width: 114%;
   min-height: 120vh;
-  background-color:  #e6f2ff;
+  background-color:  #eff4fd;
 }
+
+/*#e6f2ff*/
 
 .container{
   width: 80%;
