@@ -43,3 +43,56 @@ nav ul li a:hover{
 }
 
 
+
+
+
+
+
+/* Set the background image */
+body {
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the portrait image */
+#portrait {
+  float: right;
+  width: 36%;
+  height: auto;
+  margin-top: 40px;
+  margin-right: -8px;
+}
+
+/* Style the transparent black rectangle */
+#description {
+  margin-top: 50px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  width: 50%;
+  height: 650px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  position: relative; /* Added position relative */
+}
+
+/* Style the text inside the rectangle */
+#description h3 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+/* "Learn More" button */
+.learn-more-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: #F8F8F8;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
