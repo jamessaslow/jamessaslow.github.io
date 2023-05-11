@@ -58,11 +58,37 @@ body {
 /* Style the portrait image */
 #portrait {
   float: right;
-  width: 36%;
-  height: auto;
-  margin-top: 40px;
+  width: 530px;
+  height: 625px;
+  margin-top: 0px;
   margin-right: -8px;
 }
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 200px;
+}
+
+
+.caption {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: #f8f8f8;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 400px; /* Adjust the width value to your desired length */
+}
+
+
+
 
 /* Style the transparent black rectangle */
 #description {
@@ -81,7 +107,7 @@ body {
 /* Style the text inside the rectangle */
 #description h3 {
   font-size: 2em;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 /* "Learn More" button */
@@ -89,6 +115,17 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: #F8F8F8;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   padding: 10px 20px;
   background-color: black;
   color: #F8F8F8;
