@@ -6,47 +6,55 @@
   <title>James Saslow</title>
   <link rel="icon" type="image/png" href="website_logo.png">
   <style>
-    /* Full-page SVG background */
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('I am a Quantum Engineer Website.svg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('I am a Quantum Engineer Website.svg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
 
+  .photo-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Full viewport height for large screens */
+  }
 
+  .photo {
+    position: absolute;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow */
+    cursor: pointer;
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid black; /* Black border */
+  }
 
-	.wrapper {
-	position: relative;
-	width: 100vw; /* Full viewport width */
-	height: 100vh; /* Full viewport height */
-	background: url('I am a Quantum Engineer Website.svg') no-repeat center center;
-	background-size: contain; /* Maintain proportions */
-	}
+  .photo:hover {
+    transform: scale(1.2); /* Zoom in */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+    z-index: 10; /* Bring to front */
+  }
 
-    /* Container for images */
+  /* Responsive styles for mobile devices */
+  @media only screen and (max-width: 768px) {
+    /* Adjust photo container for smaller screens */
     .photo-container {
-      position: absolute; /* Allows absolute positioning of children */
-      width: 100%;
-      height: 100vh; /* Full viewport height */
+      display: flex;
+      flex-wrap: wrap; /* Allow photos to wrap */
+      justify-content: center; /* Center photos horizontally */
+      align-items: center; /* Center photos vertically */
+      height: auto; /* Allow height to adjust dynamically */
     }
 
-    /* Style for each photo */
+    /* Adjust individual photo styles for smaller screens */
     .photo {
-      position: absolute; /* Position relative to the container */
-      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow */
-      cursor: pointer; /* Show pointer on hover */
-      border-radius: 15px; /* Rounded corners */
-	  border: 2px solid black; /* Black border */
+      position: relative; /* No absolute positioning for better flow */
+      margin: 5px; /* Add spacing between photos */
+      width: 20%; /* Scale width dynamically to fit screen */
+      height: auto; /* Maintain aspect ratio */
+      transform: none; /* Disable hover scaling on mobile */
+      box-shadow: none; /* Disable hover shadow on mobile */
     }
-
-    /* Hover effect: Zoom and shadow */
-    .photo:hover {
-      transform: scale(1.2); /* Zoom in */
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
-      z-index: 10; /* Bring to front */
-    }
+  }
 
 	/* Resume Photo */
 	#resume {
