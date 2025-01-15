@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Saslow</title>
+  <link rel="icon" type="image/png" href="website_logo.png">
+  <style>
+    /* Full-page SVG background */
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('I am a Quantum Engineer Website.svg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+	.wrapper {
+	position: relative;
+	width: 100vw; /* Full viewport width */
+	height: 100vh; /* Full viewport height */
+	background: url('I am a Quantum Engineer Website.svg') no-repeat center center;
+	background-size: contain; /* Maintain proportions */
+	}
+
+    /* Container for images */
+    .photo-container {
+      position: absolute; /* Allows absolute positioning of children */
+      width: 100%;
+      height: 100vh; /* Full viewport height */
+    }
+
+    /* Style for each photo */
+    .photo {
+      position: absolute; /* Position relative to the container */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow */
+      cursor: pointer; /* Show pointer on hover */
+      border-radius: 15px; /* Rounded corners */
+	  border: 2px solid black; /* Black border */
+    }
+
+    /* Hover effect: Zoom and shadow */
+    .photo:hover {
+      transform: scale(1.2); /* Zoom in */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+      z-index: 10; /* Bring to front */
+    }
+
+	/* Resume Photo */
+	#resume {
+	top: 2.5%; /* Adjust placement */
+	left: 68.8%; /* Adjust placement */
+	width: 7vw; /* Portrait style width */
+	height: 9vw; /* Maintain 3:4 ratio (optional) */
+	border: 2px solid white; /* Black border */
+	border-radius: 10px; /* Rounded corners */
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow */
+	}
+	#resume:hover {
+	transform: scale(1.1); /* Slight zoom on hover */
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+	z-index: 10;
+	}
+
+
+    /* Example image positions */
+
+	/* SWAP */
+    #photo1 {
+      top: 10.5%;
+      left: 42.5%;
+      width: 11vw;
+    }
+
+	/* 3D Transmon */
+    #photo2 {
+      top: 35%;
+      left: 30%;
+      width: 10vw;
+    }
+
+	/* VQE */
+    #photo3 {
+      top: 11%;
+      left: 54.75%;
+      width: 7vw;
+    }
+
+	/* Q Foundations Undergrad */
+    #photo4 {
+      top: 13%;
+      left: 34%;
+      width: 8vw;
+    }
+
+	/* QNN*/
+    #photo5 {
+      top: 30%;
+      left: 53.7%;
+      width: 10vw;
+    }
+
+	/* AFRL AMP AMP*/
+    #photo6 {
+      top: 53%;
+      left: 55%;
+      width: 7vw;
+    }
+
+	/* Quantum Circuit Simulator*/
+    #photo7 {
+      top: 68%;
+      left: 48%;
+      width: 9vw;
+    }
+
+	/* SC Chip Design*/
+    #photo8 {
+      top: 66%;
+      left: 32%;
+      width: 13vw;
+    }
+
+	/* DWAVE Qubo's*/
+    #photo9 {
+	  top: 45%;
+      left: 64.4%;
+      width: 7vw;
+    }
+
+	/* Quantum Reinforcement Learning*/
+    #photo10 {
+	  top: 70%;
+      left: 59%;
+      width: 9.5vw;
+    }
+
+	/* Superposition photo styling */
+	#superposition {
+	position: absolute;
+	top: 70%; /* Adjust position */
+	left: 82%; /* Adjust position */
+	width: 10vw; /* Size */
+	transition: transform 0.3s ease; /* Smooth initial transition */
+	}
+
+	/* Rumble effect animation */
+	@keyframes rumble {
+	0%, 100% { transform: translate(0, 0); }
+	10% { transform: translate(-2px, -2px); }
+	20% { transform: translate(2px, -2px); }
+	30% { transform: translate(-2px, 2px); }
+	40% { transform: translate(2px, 2px); }
+	}
+
+	.rumble {
+	animation: rumble 0.08s infinite;
+	}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="photo-container">
+    <!-- Photos with links -->
+    <a href="https://arxiv.org/abs/2412.05456" target="_blank">
+      <img id="photo1" class="photo" src="SWAP.png" alt="SWAP Photo">
+    </a>
+    <!-- <a href="https://example.com/photo2" target="_blank"> -->
+      <img id="photo2" class="photo" src="3D Transmon.png" alt="Photo 2">
+    </a>
+    <a href="https://github.com/jamessaslow/VQE-Tutorial-H2" target="_blank">
+      <img id="photo3" class="photo" src="Variational Quantum Eigensolver Tutorial.png" alt="Photo 3">
+    </a>
+	<a href="https://github.com/jamessaslow/3WM-and-spontaneous-parametric-down-conversion/tree/main" target="_blank">
+		<img id="photo4" class="photo" src="Quantum Foundations Undergrad.png" alt="Photo 4">
+	  </a>
+	  <a href="https://github.com/jamessaslow/quantum-neural-networks-binary-classification/tree/main?tab=readme-ov-file" target="_blank">
+		<img id="photo5" class="photo" src="QNN.png" alt="Photo 5">
+	  </a>
+	  <!-- <a href="https://example.com/photo6" target="_blank"> -->
+		<img id="photo6" class="photo" src="AFRL AMP AMP.png" alt="Photo 6">
+	  </a>
+	  <a href="https://github.com/jamessaslow/quantum-circuit-simulator" target="_blank">
+		<img id="photo7" class="photo" src="Quantum Circuit Simulator.png" alt="Photo 7">
+	  </a>
+	  <a href="https://github.com/jamessaslow/quantum-chip-design-and-optimization/tree/main" target="_blank">
+		<img id="photo8" class="photo" src="Superconducting Q Chip Design.png" alt="Photo 8">
+	  </a>
+	  <a href="https://github.com/jamessaslow/dwave-leap-qubos/tree/main" target="_blank">
+		<img id="photo9" class="photo" src="Solving QUBO’s.png" alt="Photo 9">
+	  </a>
+	  <a href="https://github.com/jamessaslow/Quantum-Dino/tree/main" target="_blank">
+		<img id="photo10" class="photo" src="QRL.png" alt="Photo 10">
+	  </a>
+	  <a href="myResume.pdf" target="_blank">
+		<img id="resume" class="photo" src="resume-screenshot.png" alt="Resume">
+	  </a>
+	  <a id="superposition-container" href="#">
+		<img id="superposition" src="superposition.png" alt="Superposition State" class="photo">
+	  </a>	  
+  </div>
+</body>
+</html>
+
+<script>
+	const superpositionImage = document.getElementById("superposition");
+	let rumbleTimer = null; // To track the hover timer
+  
+	superpositionImage.addEventListener("mouseover", () => {
+	  // Add rumble effect
+	  superpositionImage.classList.add("rumble");
+  
+	  // Start the 1-second timer
+	  rumbleTimer = setTimeout(() => {
+		// Randomly choose |0⟩ or |1⟩
+		const randomState = Math.random() < 0.5 ? "state-0.png" : "state-1.png";
+		superpositionImage.src = randomState; // Switch the image
+		superpositionImage.alt = randomState.includes("0") ? "|0⟩" : "|1⟩";
+  
+		// Stop rumbling once the state switches
+		superpositionImage.classList.remove("rumble");
+	  }, 1000); // 1-second duration
+	});
+  
+	superpositionImage.addEventListener("mouseout", () => {
+	  // Stop rumbling
+	  superpositionImage.classList.remove("rumble");
+  
+	  // Clear the timer and reset to superposition state
+	  clearTimeout(rumbleTimer);
+	  rumbleTimer = null;
+  
+	  // Reset image back to superposition state
+	  superpositionImage.src = "superposition.png";
+	  superpositionImage.alt = "Superposition State";
+	});
+  </script>
+  
